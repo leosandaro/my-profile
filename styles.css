@@ -1,5 +1,9 @@
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+
 body{
-  background-image: url(./imgs/fundo-site.jpg);
+  background-image: url(../imgs/fundo-site.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
