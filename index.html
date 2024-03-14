@@ -9,6 +9,7 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
@@ -18,12 +19,16 @@
         <link rel="stylesheet" href="./reset.css">
         <link rel="stylesheet" href= "./styles.css">
 
+        <style>@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap')
+        </style>
+
         <title>My Profile</title>
     </head>
     <body>
+        <div class="cartao-border">
         <div class="cartao">
             <div class="minhas-informacoes">
-                <img class="foto-perfil" src="./imgs/close.png" alt="foto de perfil" />
+                <img class="foto-perfil change img-change" src="./imgs/close.png" alt="CLICK ME!" />
                 <h1 class="nome">Leonardo Rocha</h1>
                 <h2 class="cargo">Analista de Dados Júnior</h2>
             </div>
@@ -42,19 +47,45 @@
                         <div class="descricao">
                             <p>Carioca "da gema", rubro-negro, casado com o amor da minha vida há 6 anos e pai de 2 gatos. Sou Designer Gráfico, me especializei em Motion Graphics e tenho mais de 11 anos de experiência no mercado. Desde a adolescência, sempre soube que minha vida profissional iria ser atrás da tela do computador, quando comecei a ajudar meu pai a descomplicar o trabalho com meus conhecimentos de informática.</p>
 
-                            <p>Comecei minha formação acadêmica na área de tecnologia em 2022 e meu interesse pela área de <span>Data Science</span> cresce a cada dia. Desenvolvi conhecimentos sólidos em <span>SQL, Python e C</span>. Busco mais conhecimento em <span>tecnologias de bancos de dados</span>. Futebol e academia são os meus hobbies. Sou organizado, criativo, comunicativo, proativo, dedicado e sempre busco aprender mais.</p>
+                            <p>Comecei minha formação acadêmica na área de tecnologia em 2022 e meu interesse pela área de <span>Data Science</span> cresce a cada dia. Desenvolvi conhecimentos sólidos em <span>SQL, Python e C</span>. Além disso, tenho experiência com <span>HTML, CSS e JavaScript</span>. Busco mais conhecimento em <span>tecnologias de bancos de dados</span>. Futebol e academia são os meus hobbies. Sou organizado, criativo, comunicativo, proativo, dedicado e sempre busco aprender mais.</p>
                         </div>
                     </div>
                     <div class="informacao" id="informacao-minhas-redes">
                         <h3 class="sub-titulo">Minhas redes</h3>
                         <ul class="redes-sociais">
-                            <li class="curriculo"><a href="https://drive.google.com/file/d/1Gi31_qUgm3XkN-z63POs_EQEg9DpOfIC/view?usp=sharing">Currículo</a></li>
-                            <li class="linkedin"><a href="https://www.linkedin.com/in/leonardo-santos-da-rocha/">LinkedIn</a></li>
-                            <li class="github"><a href="https://github.com/leosandaro">GitHub</a></li>
+
+                            <li class="curriculo btn btn-1"><a href="https://drive.google.com/file/d/1Gi31_qUgm3XkN-z63POs_EQEg9DpOfIC/view?usp=sharing">
+                                <svg>
+                                    <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+                                </svg>
+                                Currículo</a>
+                            </li>
+
+                            <li class="linkedin btn btn-1"><a href="https://www.linkedin.com/in/leonardo-santos-da-rocha/">
+                                <svg>
+                                    <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+                                </svg>
+                                LinkedIn</a>
+                            </li>
+
+                            <li class="github btn btn-1"><a href="https://github.com/leosandaro">
+                                <svg>
+                                    <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+                                </svg>
+                                GitHub</a>
+                            </li>
+
+                            <li class="whatsapp btn btn-1"><a href="https://wa.me/+5521982467086">
+                                <svg>
+                                    <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+                                </svg>WhatsApp</a>
+                            </li>
+
                         </ul>
                     </div>
                 </div>
             </div>
+        </div>
         <script src="./index.js"></script>
     </body>
 </html>

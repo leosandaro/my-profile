@@ -1,7 +1,3 @@
-.selector-for-some-widget {
-    box-sizing: content-box;
-  }
-
 body{
   background-image: url(../imgs/fundo-site.jpg);
   background-repeat: no-repeat;
@@ -23,7 +19,17 @@ body{
 .cartao{
   background-color: #070d12;
   width: 470px;
-  border: 2px solid #e126d9;
+  /* border: 2px solid #e126d9; */
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 2rem;
+}
+.cartao-border{
+  background: linear-gradient(-45deg, #e126d9, #02d08f);
+  max-width: 550px;
+  padding: 1rem;
+  padding: 3px;
+  position: relative;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -82,6 +88,11 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+
+.clicado{
+  background-image: url("./imgs/close-edit-astronauta.png")
 }
 
 .cartao .minhas-informacoes .nome{
@@ -129,9 +140,9 @@ body{
 .redes-sociais{
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  /* gap: 25px; */
   align-items: center;
-  max-height: 350px;
+  height: 350px;
   overflow-y: auto;
 }
 
@@ -148,12 +159,13 @@ body{
 }
 
 .redes-sociais li:hover{
-  opacity: 0.6;
-  transition: opacity 0.3s ease-in-out;
+  background-color: rgba(7, 13, 18);
+  opacity: 10;
+  transition: opacity 0.5s ease-in-out,
 }
 
 .redes-sociais .curriculo{
-  background-color: #06c185;
+  background-color: #C08552;
 }
 
 .redes-sociais .linkedin{
@@ -162,6 +174,10 @@ body{
 
 .redes-sociais .github{
   background-color: #545454;
+}
+
+.redes-sociais .whatsapp{
+  background-color: #53CA75;
 }
 
 /*Código da barra de rolagem no body*/
@@ -200,6 +216,7 @@ body::-webkit-scrollbar-thumb {
   --sb-track-color: #414141;
   --sb-thumb-color: #e126d9;
   --sb-size: 8px;
+  line-height: 130%;
 }
 
 .descricao::-webkit-scrollbar {
@@ -253,3 +270,89 @@ body::-webkit-scrollbar-thumb {
                      var(--sb-track-color);
   }
 }
+
+/* Efeito dos Botões */
+
+/* default button */
+.btn {
+  color: #fff;
+  margin: 0 0 2em;
+  max-width: 250px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  border-radius: 0rem;
+  padding: 0rem;
+
+  @media(min-width: 600px) {
+    margin: 0 1em 2em;
+  }
+
+  &:hover { text-decoration: none; }
+
+}
+
+/* button one */
+
+.btn-1 {
+  font-weight: 100;
+
+  svg {
+    height: 47px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  rect {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+    transition: all 0.35s linear;
+  }
+}
+
+.btn-1:hover {
+  font-weight: 900;
+  letter-spacing: 1px;
+
+  rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
+
+/* Alt Text */
+
+  .alt-wrap {
+    display: block;
+    position: relative;
+    margin: 20px;
+    color: whitesmoke;
+  }
+
+  .alt-wrap p.alt {
+    position: absolute;
+    opacity: 0; /* hide initially */
+    left: 0; right: 0; bottom: 0;
+    margin: 0;
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 22px;
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 55px;
+    transition: all 300ms ease;
+    transition-delay: 300ms;
+  }
+
+/* Hovering over the wrapper shows its alt p*/
+  .alt-wrap:hover > p.alt {
+    opacity: 1;
+    transition-delay: 0s;
+  }

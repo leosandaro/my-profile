@@ -42,6 +42,25 @@ function mostrarInformacoesDaAba(aba){
     informacaoASerMostrada.classList.add("selecionado");
 }
 
+// Trocar imagem
+
+$('.change').click((e) => {
+    var img1 = './imgs/close.png';
+    var img2 = './imgs/close-edit-astronauta.png';
+    var element = $('.img-change');
+    if(element.attr('src') === img1){
+      element.attr('src',img2);
+    }else if(element.attr('src') === img2){
+      element.attr('src',img1);
+    }
+});
+
+// Alt text
+  $(".foto-perfil").wrap('<div class="alt-wrap"/>');
+
+  $(".foto-perfil").each(function() {
+    $(this).after('<p class="alt">' + $(this).attr('alt') + '</p>');
+  })
 
 
 
